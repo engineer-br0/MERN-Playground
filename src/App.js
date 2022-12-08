@@ -24,9 +24,19 @@ function App() {
 
 export default App;
 */
+import React from 'react';
+import Shopping from './components/Shopping';
+import Home from './components/Home';
+import Post from './components/Post';
 
 function App(){
-  
+  let value = 20;
+  return(
+    <>
+    <Home value={value}/>
+    <Post />
+    </>
+  )
 }
 
 export default App;
