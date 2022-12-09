@@ -4,10 +4,9 @@ import Home from './components/redux/Home';
 import Post from './components/redux/Post';
 
 function App(){
-  let value = 20;
   return(
     <>
-    <Home value={value}/>
+    <Home />
     <Post />
     </>
   )
