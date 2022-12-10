@@ -2,17 +2,23 @@
 //provider
 //consumer           ---------- useContext hook
 
-import { createContext } from "react";
+import { createContext, useContext } from "react";
 
 const AppContext = createContext();
 
 const AppProvider = ({ children }) =>{
 
     return(
-        <AppContext.Provider value="mridul">
+        <AppContext.Provider value="MRIDUL SHARMA (it is showing by using context)">
             { children }
         </AppContext.Provider>
     )
 }
 
-export {AppContext, AppProvider};
+// global custom hook
+
+const useGlobalContext = () =>{
+    return useContext(AppContext);
+}
+
+export {AppContext, AppProvider, useGlobalContext};
