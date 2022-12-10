@@ -1,6 +1,12 @@
+import React, {useContext} from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { AppContext } from "../context/Context";
 
 const Home = () =>{
+    //using useContext
+    const myName = useContext(AppContext);  //here use context is the consumer
+
+    //using redux
     const {c} = useSelector((state) => state.custom);
 
     const dispatch = useDispatch();
@@ -27,7 +33,7 @@ const Home = () =>{
     return(
         <>
         <div>
-            HEy im home
+            HEy im {myName}     
         </div>
         <h1>{c}</h1>
         <button onClick={addBtn}>increment</button>

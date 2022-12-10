@@ -1,7 +1,7 @@
 import React from 'react';
-import Shopping from './components/10x/Shopping';
-import Home from './components/redux/Home';
-import Post from './components/redux/Post';
+import Shopping from './10x/Shopping';
+import Home from './components/Home';
+import Post from './components/Post';
 
 function App(){
   return(
